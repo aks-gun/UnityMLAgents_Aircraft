@@ -1,0 +1,118 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1602286226",
+        "python_version": "3.7.9 (default, Aug 31 2020, 17:10:11) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\akshayg\\anaconda3\\envs\\ml-agents-1.0.5\\Scripts\\mlagents-learn C:\\Users\\akshayg\\Documents\\Projects\\training\\config\\trainer_config.yaml --curriculum C:\\Users\\akshayg\\Documents\\Projects\\training\\config\\curricula\\AircraftLearning.yaml --run-id aircraft03",
+        "mlagents_version": "0.16.0",
+        "mlagents_envs_version": "0.16.0",
+        "communication_protocol_version": "1.0.0",
+        "tensorflow_version": "2.3.1",
+        "end_time_seconds": "1602286308"
+    },
+    "total": 81.3634634,
+    "count": 1,
+    "self": 0.1882817999999986,
+    "children": {
+        "run_training.setup": {
+            "total": 0.008076899999999831,
+            "count": 1,
+            "self": 0.008076899999999831
+        },
+        "TrainerController.start_learning": {
+            "total": 81.1671047,
+            "count": 1,
+            "self": 1.4427433999999977,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 9.3599161,
+                    "count": 1,
+                    "self": 9.3599161
+                },
+                "TrainerController.advance": {
+                    "total": 70.3644452,
+                    "count": 16,
+                    "self": 0.00034270000001868084,
+                    "children": {
+                        "env_step": {
+                            "total": 70.36410249999999,
+                            "count": 16,
+                            "self": 70.36367469999999,
+                            "children": {
+                                "SubprocessEnvManager._take_step": {
+                                    "total": 0.00017889999999631812,
+                                    "count": 16,
+                                    "self": 0.00017889999999631812
+                                },
+                                "workers": {
+                                    "total": 0.0002488999999972208,
+                                    "count": 15,
+                                    "self": 0.0,
+                                    "children": {
+                                        "worker_root": {
+                                            "total": 11.534080200000004,
+                                            "count": 15,
+                                            "is_parallel": true,
+                                            "self": 1.2872303000000045,
+                                            "children": {
+                                                "steps_from_proto": {
+                                                    "total": 0.0005790999999994995,
+                                                    "count": 1,
+                                                    "is_parallel": true,
+                                                    "self": 0.0001630999999964189,
+                                                    "children": {
+                                                        "_process_vector_observation": {
+                                                            "total": 0.00041600000000308057,
+                                                            "count": 8,
+                                                            "is_parallel": true,
+                                                            "self": 0.00041600000000308057
+                                                        }
+                                                    }
+                                                },
+                                                "UnityEnvironment.step": {
+                                                    "total": 10.2462708,
+                                                    "count": 15,
+                                                    "is_parallel": true,
+                                                    "self": 0.002186200000009464,
+                                                    "children": {
+                                                        "UnityEnvironment._generate_step_input": {
+                                                            "total": 0.000627599999997841,
+                                                            "count": 15,
+                                                            "is_parallel": true,
+                                                            "self": 0.000627599999997841
+                                                        },
+                                                        "communicator.exchange": {
+                                                            "total": 10.236317900000001,
+                                                            "count": 15,
+                                                            "is_parallel": true,
+                                                            "self": 10.236317900000001
+                                                        },
+                                                        "steps_from_proto": {
+                                                            "total": 0.007139099999990961,
+                                                            "count": 15,
+                                                            "is_parallel": true,
+                                                            "self": 0.0021830000000022665,
+                                                            "children": {
+                                                                "_process_vector_observation": {
+                                                                    "total": 0.0049560999999886945,
+                                                                    "count": 120,
+                                                                    "is_parallel": true,
+                                                                    "self": 0.0049560999999886945
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
